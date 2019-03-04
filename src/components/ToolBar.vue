@@ -16,4 +16,5 @@
     .header {display:flex;background:#42b883;padding:8px}
     .header a {padding:5px;color:#fff}
     .header a.router-link-exact-active {color:#35495e}
+
 </style>
