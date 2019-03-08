@@ -1,28 +1,14 @@
 <template>
     <div>
-        <!-- #1 -->
-        <!-- <p>{{ user.id }}</p> -->
-
-        <!-- #2 -->
-        <p>created_time: {{fetchedUser.created_time}}</p>
-        <p>id: {{fetchedUser.id}}</p>
-        <p>karma: {{fetchedUser.karma}}</p>
-        <p>created: {{fetchedUser.created}}</p>
-        <!-- {{user}} -->
+        <user-profile></user-profile>
     </div>
 </template>
 
 <script>
-    import {fetchUserInfo} from '../api/index.js'
-    import {mapGetters} from 'vuex'
+    import UserProfile from '../components/UserProfile.vue'
     export default {
-        computed:{
-           ...mapGetters([
-               'fetchedUser'
-           ]),
-            //user(){
-            //    return this.$store.state.user;
-            //}
+        components:{
+            UserProfile
         },
         created(){
             const userName = this.$route.params.id
