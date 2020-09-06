@@ -8,4 +8,3 @@
 ### Compiles and hot-reloads for development
 
 See [Configuration Reference].
-
